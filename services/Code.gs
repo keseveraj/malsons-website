@@ -96,6 +96,8 @@ function sendRenovationGuide(recipientEmail, data) {
     to: recipientEmail,
     subject: subject,
     body: body,
+    htmlBody: body.replace(/\n/g, '<br>'), // Basic HTML version
+    name: "Malsons Construction Team", // Display Name
     attachments: [pdf]
   });
 }
