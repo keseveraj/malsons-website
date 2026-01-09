@@ -33,7 +33,15 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
-        <a href="#hero" className="flex items-center gap-2 md:gap-3 group">
+        <a
+          href="/"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.history.replaceState(null, '', '/');
+          }}
+          className="flex items-center gap-2 md:gap-3 group"
+        >
           <img
             src={isScrolled ? "/No_Background_Malsons_Logo_black.png" : "/No_Background_Malsons_Logo.png"}
             alt="Malsons Construction"

@@ -7,7 +7,15 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
-            <a href="#hero" className="inline-flex items-center justify-center md:justify-start gap-3 mb-2 group">
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                window.history.replaceState(null, '', '/');
+              }}
+              className="inline-flex items-center justify-center md:justify-start gap-3 mb-2 group"
+            >
               <img
                 src="/No_Background_Malsons_Logo.png"
                 alt="Malsons Construction"
