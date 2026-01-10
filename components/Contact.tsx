@@ -81,7 +81,7 @@ I'd like to arrange a free site assessment. Looking forward to your advice.`;
                   </div>
                   <div>
                     <p className="text-xs text-stone-500 font-bold uppercase tracking-wider mb-0.5">Email</p>
-                    <p className="text-lg font-medium text-white break-all">enquiry@malsonsconstuction.com</p>
+                    <p className="text-lg font-medium text-white break-all">enquiry@malsonsconstruction.com</p>
                   </div>
                 </div>
 
@@ -157,8 +157,8 @@ I'd like to arrange a free site assessment. Looking forward to your advice.`;
                         type="button"
                         onClick={() => handlePropertySelect(type)}
                         className={`px-2 py-3 rounded-xl text-sm font-semibold border-2 transition-all duration-200 ${formData.propertyType === type
-                            ? 'border-stone-900 bg-stone-900 text-white shadow-lg transform scale-[1.02]'
-                            : 'border-stone-100 bg-white text-stone-500 hover:border-stone-300 hover:bg-stone-50'
+                          ? 'border-stone-900 bg-stone-900 text-white shadow-lg transform scale-[1.02]'
+                          : 'border-stone-100 bg-white text-stone-500 hover:border-stone-300 hover:bg-stone-50'
                           }`}
                       >
                         {type.replace(' / ', '/')}

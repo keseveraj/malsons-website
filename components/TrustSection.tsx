@@ -40,7 +40,7 @@ const TrustSection: React.FC = () => {
             </div>
 
             {/* Circular Contact Badge */}
-            <div className="absolute right-6 bottom-6 md:top-1/2 md:-translate-y-1/2 md:right-12 w-20 h-20 md:w-32 md:h-32 rounded-full border border-stone-200 flex items-center justify-center bg-stone-50 group-hover:bg-amber-100 transition-colors cursor-pointer animate-[spin_10s_linear_infinite]">
+            <div className="absolute right-6 bottom-32 md:bottom-auto md:top-1/2 md:-translate-y-1/2 md:right-12 w-20 h-20 md:w-32 md:h-32 rounded-full border border-stone-200 flex items-center justify-center bg-stone-50 group-hover:bg-amber-100 transition-colors cursor-pointer animate-[spin_10s_linear_infinite]">
               <svg viewBox="0 0 100 100" width="100" height="100" className="w-full h-full p-2">
                 <defs>
                   <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
