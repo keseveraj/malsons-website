@@ -16,8 +16,11 @@ const TrustSection: React.FC = () => {
           </div>
           <div className="lg:col-span-7">
             <h2 className="text-3xl md:text-5xl font-serif font-medium leading-tight text-stone-900">
-              We specialize in the art of transforming vision into <span className="italic text-stone-500">living reality</span> across Klang Valley. With expertise in construction, interior design, and project management, we build spaces that captivate and comfort throughout Kuala Lumpur, Subang Jaya, Petaling Jaya, and surrounding areas.
+              We specialize in the art of transforming vision into <span className="italic text-stone-500">living reality</span>.
             </h2>
+            <p className="mt-6 text-lg text-stone-600 max-w-2xl leading-relaxed">
+              With expertise in construction, interior design, and project management, we build spaces that captivate and comfort across <span className="text-stone-900 font-medium">Kuala Lumpur, Subang Jaya, Petaling Jaya</span>, and surrounding Klang Valley areas.
+            </p>
           </div>
         </div>
 
