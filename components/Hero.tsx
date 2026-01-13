@@ -19,14 +19,17 @@ const Hero: React.FC = () => {
       <div className="container mx-auto relative z-20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="opacity-0 animate-fade-up [animation-delay:200ms]">
-            <h1 className="text-5xl md:text-8xl lg:text-9xl font-bold font-serif text-white leading-[1] mb-8 drop-shadow-2xl">
-              Elevating the <br />
-              <span className="text-stone-300 italic font-light">Living Experience</span>
+            <h1 className="text-base md:text-lg font-medium text-amber-400 mb-4">
+              Professional Construction & Renovation Services in Klang Valley
             </h1>
 
-            <p className="text-lg md:text-2xl text-stone-200 mb-12 max-w-2xl mx-auto leading-relaxed font-light drop-shadow-md">
-              Malsons CR specializes in high-end renovation and construction.
-              We blend engineering precision with timeless design.
+            <h2 className="text-5xl md:text-8xl lg:text-9xl font-bold font-serif text-white leading-[1] mb-8 drop-shadow-2xl">
+              Elevating the <br />
+              <span className="text-stone-300 italic font-light">Living Experience</span>
+            </h2>
+
+            <p className="text-lg md:text-xl text-stone-300 max-w-2xl mx-auto mt-6 mb-12">
+              Transform your space with expert residential and commercial renovation services across Kuala Lumpur, Subang Jaya, Petaling Jaya, and surrounding areas.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
