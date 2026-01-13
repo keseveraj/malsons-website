@@ -3,11 +3,11 @@ import { ArrowRight, Star, Clock, Home, Trophy } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="relative min-h-[90vh] md:min-h-screen flex items-center overflow-hidden bg-stone-900 py-20 px-6">
+    <section id="hero" className="relative min-h-[90vh] md:min-h-screen flex items-center overflow-hidden bg-stone-900 pt-32 pb-20 px-6">
 
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-stone-900/40 z-10 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-stone-900/50 z-10 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-stone-900/20 to-transparent z-10"></div>
         <img
           src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
@@ -17,18 +17,18 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="container mx-auto relative z-20">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           <div className="opacity-0 animate-fade-up [animation-delay:200ms]">
-            <h1 className="text-base md:text-lg font-medium text-amber-400 mb-4">
+            <h1 className="text-sm md:text-lg font-medium text-amber-400 mb-6 uppercase tracking-widest">
               Professional Construction & Renovation Services in Klang Valley
             </h1>
 
-            <h2 className="text-5xl md:text-8xl lg:text-9xl font-bold font-serif text-white leading-[1] mb-8 drop-shadow-2xl">
+            <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold font-serif text-white leading-[1.1] mb-8 drop-shadow-2xl">
               Elevating the <br />
               <span className="text-stone-300 italic font-light">Living Experience</span>
             </h2>
 
-            <p className="text-lg md:text-xl text-stone-300 max-w-2xl mx-auto mt-6 mb-12">
+            <p className="text-lg md:text-xl text-stone-200 max-w-3xl mx-auto mt-6 mb-12 leading-relaxed">
               Transform your space with expert residential and commercial renovation services across Kuala Lumpur, Subang Jaya, Petaling Jaya, and surrounding areas.
             </p>
 
