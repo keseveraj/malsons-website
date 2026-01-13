@@ -98,7 +98,7 @@ const Services: React.FC = () => {
                   <div className="relative w-full aspect-video lg:aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-white/5 group-hover:scale-[1.02] transition-transform duration-700 bg-stone-800">
                     <img
                       src={service.image}
-                      alt={service.title}
+                      alt={`${service.title} - Professional Renovation Service by Malsons`}
                       className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent to-transparent"></div>

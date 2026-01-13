@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-stone-900/90 via-stone-900/20 to-transparent z-10"></div>
         <img
           src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-          alt="Modern Home Interior"
+          alt="Luxury Home Renovation and Interior Design in Klang Valley by Malsons Construction"
           className="w-full h-full object-cover scale-105 animate-slow-zoom"
         />
       </div>

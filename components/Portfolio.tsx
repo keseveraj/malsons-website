@@ -59,7 +59,7 @@ const projects: Project[] = [
   }
 ];
 
-const BeforeAfterSlider: React.FC<{ after: string; before: string; afterVideo?: string; beforeVideo?: string }> = ({ after, before, afterVideo, beforeVideo }) => {
+const BeforeAfterSlider: React.FC<{ after: string; before: string; afterVideo?: string; beforeVideo?: string; afterAlt?: string; beforeAlt?: string }> = ({ after, before, afterVideo, beforeVideo, afterAlt = "After renovation", beforeAlt = "Before renovation" }) => {
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -164,7 +164,7 @@ const BeforeAfterSlider: React.FC<{ after: string; before: string; afterVideo?: 
       ) : (
         <img
           src={after}
-          alt="After"
+          alt={afterAlt}
           className="absolute inset-0 w-full h-full object-cover"
           draggable={false}
           onError={(e) => {
@@ -197,7 +197,7 @@ const BeforeAfterSlider: React.FC<{ after: string; before: string; afterVideo?: 
         ) : (
           <img
             src={before}
-            alt="Before"
+            alt={beforeAlt}
             className="absolute inset-0 w-full h-full object-cover"
             draggable={false}
             onError={(e) => {
@@ -260,7 +260,7 @@ const Portfolio: React.FC = () => {
             >
               <img
                 src={project.image}
-                alt={project.title}
+                alt={`${project.title} - ${project.category} Renovation in ${project.location}`}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 onError={(e) => {
                   if (project.id === 1) {
@@ -327,6 +327,8 @@ const Portfolio: React.FC = () => {
                 before={selectedProject.beforeImage}
                 afterVideo={selectedProject.video}
                 beforeVideo={selectedProject.beforeVideo}
+                afterAlt={`Completed renovation of ${selectedProject.title}`}
+                beforeAlt={`Original condition of ${selectedProject.title}`}
               />
             </div>
 
